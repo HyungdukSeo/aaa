@@ -71,7 +71,7 @@ fetch("../src/audio.wasm").then((response) => response.arrayBuffer())
 .then((wasm) => {
     addButton("g726be16k").onclick = function () {
         let decoder = new G726(wasm, importObj, 2);
-        decodeAudio("demo.g726be16k", decoder.decodeBe.bind(decoder));
+        decodeAudio("1120115214.g726", decoder.decodeBe.bind(decoder));
     }
     
     addButton("adpcm").onclick = function () {
